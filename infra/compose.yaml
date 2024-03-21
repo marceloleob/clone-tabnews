@@ -1,3 +1,5 @@
+name: clone-tabnews
+
 services:
   database:
     image: 'postgres:16.0-alpine3.18'

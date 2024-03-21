@@ -21,13 +21,10 @@ async function status(request, response) {
     updated_at: updatedAt,
     dependencies: {
       database: {
-        status: "",
+        version: dbVersionValue,
         max_connections: parseInt(dbMaxConnectionsValue),
         opened_connections: dbOpenConnectionsValue,
-        latency: {},
-        version: dbVersionValue,
       },
-      webserver: {},
     },
   });
 }
